@@ -71,7 +71,7 @@ private:
 
 public:
   ThreadQueue ();
-  ~ThreadQueue ();
+  virtual ~ThreadQueue ();
 
   void open ();
   void close ();

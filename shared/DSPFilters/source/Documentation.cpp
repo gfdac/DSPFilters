@@ -425,6 +425,7 @@ void UsageExamples ()
 
     // calculate response at frequency 440 Hz
     Dsp::complex_t response = f.response (440./44100);
+    (void) response;
   }
 
   // Extract coefficients from a Cascade

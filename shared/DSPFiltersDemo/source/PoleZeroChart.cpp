@@ -82,7 +82,7 @@ void PoleZeroChart::paintContents (Graphics& g)
     Point<float> p0 = Point<float>(-1, -1).transformedBy (t);
     Point<float> p1 = Point<float>( 1,  1).transformedBy (t);
     g.drawEllipse (p0.getX(), p0.getY(),
-                   p1.getX()-p0.getX(), p1.getY()-p0.getY(), 1);
+                   p1.getX()-p0.getX(), p0.getY()-p1.getY(), 1);
   }
 
   const float r = 3.5f;

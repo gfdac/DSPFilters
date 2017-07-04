@@ -2,3 +2,5 @@ build
 .waf*
 .lock*
 .*.sw*
+shared/DSPFiltersProjucer/JuceLibraryCode
+shared/DSPFiltersProjucer/Builds

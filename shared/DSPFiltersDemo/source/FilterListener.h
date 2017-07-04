@@ -43,6 +43,9 @@ THE SOFTWARE.
 class FilterListener
 {
 public:
+  FilterListener() { }
+  virtual ~FilterListener() { }
+    
   // Sent when a new Filter object is created
   virtual void onFilterChanged (Dsp::Filter* newFilter) { }
 
