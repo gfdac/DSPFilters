@@ -114,6 +114,12 @@ public:
     }
   }
 
+  void reset ()
+  {
+    m_remainingSamples = -1;
+    FilterDesign<DesignClass, Channels, StateType>::reset();
+  }
+
   void process (int numSamples, float* const* arrayOfChannels)
   {
     processBlock (numSamples, arrayOfChannels);
