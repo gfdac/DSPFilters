@@ -177,16 +177,6 @@ BandPassTransform::BandPassTransform (double fc,
     ComplexPair p1 = transform (pair.poles.first);
     ComplexPair z1 = transform (pair.zeros.first);
 
-    //
-    // Optimize out the calculations for conjugates for Release builds
-    //
-#ifndef NDEBUG
-    ComplexPair p2 = transform (pair.poles.second);
-    ComplexPair z2 = transform (pair.zeros.second);
-    assert (p2.first == std::conj (p1.first));
-    assert (p2.second == std::conj (p1.second));
-#endif
-
     digital.addPoleZeroConjugatePairs (p1.first, z1.first);
     digital.addPoleZeroConjugatePairs (p1.second, z1.second);
   }
