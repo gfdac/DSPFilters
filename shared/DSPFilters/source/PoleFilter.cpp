@@ -85,8 +85,9 @@ LowPassTransform::LowPassTransform (double fc,
 
 complex_t HighPassTransform::transform (complex_t c)
 {
-  if (c == infinity())
-    return complex_t (1, 0);
+  if (c.real() == std::numeric_limits<double>::infinity() ||
+      c.imag() == std::numeric_limits<double>::infinity())
+      return complex_t (1, 0);
 
   // frequency transform
   c = f * c; 

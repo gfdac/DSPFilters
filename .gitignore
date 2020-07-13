@@ -4,3 +4,4 @@ build
 .*.sw*
 shared/DSPFiltersProjucer/JuceLibraryCode
 shared/DSPFiltersProjucer/Builds
+.DS_Store
