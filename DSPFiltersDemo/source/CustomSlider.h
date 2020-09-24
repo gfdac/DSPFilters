@@ -41,7 +41,7 @@ THE SOFTWARE.
 class CustomSlider : public Slider
 {
 public:
-  CustomSlider (String name = String::empty)
+  CustomSlider (String name = "")
     : Slider (name)
   {
   }

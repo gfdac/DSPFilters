@@ -91,7 +91,7 @@ void FilterChart::onFilterParameters ()
 
 const String FilterChart::getName() const
 {
-  return String::empty;
+  return "";
 }
 
 void FilterChart::drawText (Graphics &g,

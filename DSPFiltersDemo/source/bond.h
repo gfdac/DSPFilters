@@ -38,7 +38,7 @@ THE SOFTWARE.
 
 // Mini version of boost::bind.
 
-namespace detail {
+namespace bonddetail {
 
 template <class Object>
 struct bond_call0
@@ -83,15 +83,15 @@ struct bond_call1
 }
 
 template <class Object>
-detail::bond_call0 <Object> bond (void (Object::*funcPtr)(void), Object* object)
+bonddetail::bond_call0 <Object> bond (void (Object::*funcPtr)(void), Object* object)
 {
-  return detail::bond_call0 <Object> (funcPtr, object);
+  return bonddetail::bond_call0 <Object> (funcPtr, object);
 }
 
 template <class Object, typename P1>
-detail::bond_call1 <Object, P1> bond (void (Object::*funcPtr)(P1), Object* object, P1 p1)
+bonddetail::bond_call1 <Object, P1> bond (void (Object::*funcPtr)(P1), Object* object, P1 p1)
 {
-  return detail::bond_call1 <Object, P1> (funcPtr, object, p1);
+  return bonddetail::bond_call1 <Object, P1> (funcPtr, object, p1);
 }
 
 #endif

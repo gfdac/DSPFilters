@@ -56,7 +56,7 @@ void PoleZeroChart::paintContents (Graphics& g)
 	short size = (jmin (getWidth(), getHeight()) + 2) / 3;
 
   // scale the graph down if the pole/zeroes lie outside the unit disc
-  AffineTransform t = AffineTransform::identity;
+  AffineTransform t;
 
   {
     float margin = 0.2f;

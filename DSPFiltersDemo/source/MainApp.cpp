@@ -103,12 +103,12 @@ void MainApp::getCommandInfo (CommandID commandID, ApplicationCommandInfo& resul
   {
   case cmdAbout:
     result.setInfo (TRANS("About Dsp Demo"),
-                    TRANS("Displays the About box"), String::empty, 0);
+                    TRANS("Displays the About box"), "", 0);
     break;
 
   case cmdSettings:
     result.setInfo (TRANS("Settings..."),
-                    TRANS("Adjust audio settings"), String::empty, 0);
+                    TRANS("Adjust audio settings"), "", 0);
     break;
 
   default:
